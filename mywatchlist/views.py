@@ -9,7 +9,10 @@ def show_mywatchlist(request):
 
 def show_html(request):
     data = MyWatchlistItem.objects.all()
-    return render(request, "mywatchlist.html")
+    context = {
+        'list_data': data,
+    }
+    return render(request, "mywatchlist.html", context)
 
 def show_json(request):
     data = MyWatchlistItem.objects.all()

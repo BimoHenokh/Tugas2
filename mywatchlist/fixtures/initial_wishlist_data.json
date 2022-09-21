@@ -1,0 +1,112 @@
+[
+    {
+        "model":"mywatchlist.mywatchlistitem",
+        "pk":1,
+        "fields":{
+            "watched":"Sudah", 
+            "title":"Apenger", 
+            "rating":"5", 
+            "release_date":"april2021",
+            "review":"keren gan" 
+        }
+    },
+    {
+        "model":"mywatchlist.mywatchlistitem",
+        "pk":2,
+        "fields":{
+            "watched":"Sudah", 
+            "title":"Apenger", 
+            "rating":"5", 
+            "release_date":"april2021",
+            "review":"keren gan" 
+        }
+    },
+    {
+        "model":"mywatchlist.mywatchlistitem",
+        "pk":3,
+        "fields":{
+            "watched":"Sudah", 
+            "title":"Apenger", 
+            "rating":"5", 
+            "release_date":"april2021",
+            "review":"keren gan" 
+        } 
+    },
+    {
+        "model":"mywatchlist.mywatchlistitem",
+        "pk":4,
+        "fields":{
+            "watched":"Sudah", 
+            "title":"Apenger", 
+            "rating":"5", 
+            "release_date":"april2021",
+            "review":"keren gan" 
+        }  
+    },
+    {
+        "model":"mywatchlist.mywatchlistitem",
+        "pk":5,
+        "fields":{
+            "watched":"Sudah", 
+            "title":"Apenger", 
+            "rating":"5", 
+            "release_date":"april2021",
+            "review":"keren gan" 
+        }
+    },
+    {
+        "model":"mywatchlist.mywatchlistitem",
+        "pk":6,
+        "fields":{
+            "watched":"Sudah", 
+            "title":"Apenger", 
+            "rating":"5", 
+            "release_date":"april2021",
+            "review":"keren gan" 
+        }
+    },
+    {
+        "model":"mywatchlist.mywatchlistitem",
+        "pk":7,
+        "fields":{
+            "watched":"Sudah", 
+            "title":"Apenger", 
+            "rating":"5", 
+            "release_date":"april2021",
+            "review":"keren gan" 
+        }
+    },
+    {
+        "model":"mywatchlist.mywatchlistitem",
+        "pk":8,
+        "fields":{
+            "watched":"Sudah", 
+            "title":"Apenger", 
+            "rating":"5", 
+            "release_date":"april2021",
+            "review":"keren gan" 
+        }
+    },
+    {
+        "model":"mywatchlist.mywatchlistitem",
+        "pk":9,
+        "fields":{
+            "watched":"Sudah", 
+            "title":"Apenger", 
+            "rating":"5", 
+            "release_date":"april2021",
+            "review":"keren gan" 
+        }
+    },
+    {
+        "model":"mywatchlist.mywatchlistitem",
+        "pk":10,
+        "fields":{
+            "watched":"Sudah", 
+            "title":"Apenger", 
+            "rating":"5", 
+            "release_date":"april2021",
+            "review":"keren gan" 
+        }
+    }
+]
