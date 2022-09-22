@@ -4,10 +4,10 @@
         "pk":1,
         "fields":{
             "watched":"Sudah", 
-            "title":"Apenger", 
-            "rating":"5", 
-            "release_date":"april2021",
-            "review":"keren gan" 
+            "title":"Avenger", 
+            "rating":"5.6", 
+            "release_date":"9 April 2006",
+            "review":"If you like Sam Elliott's work and I do, you will very much enjoy this spy story. " 
         }
     },
     {
@@ -15,10 +15,10 @@
         "pk":2,
         "fields":{
             "watched":"Sudah", 
-            "title":"Apenger", 
-            "rating":"5", 
-            "release_date":"april2021",
-            "review":"keren gan" 
+            "title":"Avengers: Age of Ultron", 
+            "rating":"7.3", 
+            "release_date":"22 April 2015",
+            "review":"What also really bothered me was Ultron's voice and character. Seemed too childish and immature for a villain. His humor was also cheesy." 
         }
     },
     {
@@ -26,10 +26,10 @@
         "pk":3,
         "fields":{
             "watched":"Sudah", 
-            "title":"Apenger", 
-            "rating":"5", 
-            "release_date":"april2021",
-            "review":"keren gan" 
+            "title":"Avengers: Infinity War", 
+            "rating":"8.4", 
+            "release_date":"25 April 2018",
+            "review":"Avengers infinity war is an emotional roller coaster." 
         } 
     },
     {
@@ -37,10 +37,10 @@
         "pk":4,
         "fields":{
             "watched":"Sudah", 
-            "title":"Apenger", 
-            "rating":"5", 
-            "release_date":"april2021",
-            "review":"keren gan" 
+            "title":"Avengers: Endgame", 
+            "rating":"8.4", 
+            "release_date":"24 April 2019",
+            "review":"I checked the row where I was sitting, and people were crying. After the movie, I was seeing people with smudged mascara." 
         }  
     },
     {
@@ -48,10 +48,10 @@
         "pk":5,
         "fields":{
             "watched":"Sudah", 
-            "title":"Apenger", 
-            "rating":"5", 
-            "release_date":"april2021",
-            "review":"keren gan" 
+            "title":"Star Wars: Episode I - The Phantom Menace", 
+            "rating":"6.5", 
+            "release_date":"19 Mei 1999",
+            "review":"Star Wars: Episode I - The Phantom Menace'. A movie, which has a difficult standing in the fan community. For me, not understandable, because I really like the movie and it's a successful prelude to the formerly new trilogy." 
         }
     },
     {
@@ -59,10 +59,10 @@
         "pk":6,
         "fields":{
             "watched":"Sudah", 
-            "title":"Apenger", 
-            "rating":"5", 
-            "release_date":"april2021",
-            "review":"keren gan" 
+            "title":"Star Wars: Episode II - Attack of the Clones", 
+            "rating":"6.6", 
+            "release_date":"16 Mei 2002",
+            "review":"Underrated but not perfect" 
         }
     },
     {
@@ -70,43 +70,43 @@
         "pk":7,
         "fields":{
             "watched":"Sudah", 
-            "title":"Apenger", 
-            "rating":"5", 
-            "release_date":"april2021",
-            "review":"keren gan" 
+            "title":"Star Wars: Episode III - Revenge of the Sith", 
+            "rating":"7.6", 
+            "release_date":"19 Mei 2005",
+            "review":"May 19, 2005 was not a simple day for fans and fans of the Star Wars. It was a day when all pieces of history fell into place, finally opening a riddle that lasted more than 28 years. People imagined and thought out, wrote books and stories, collected facts and made legends, and everything for the sake of one saga, which will forever remain in the hearts of its admirers." 
         }
     },
     {
         "model":"mywatchlist.mywatchlistitem",
         "pk":8,
         "fields":{
-            "watched":"Sudah", 
-            "title":"Apenger", 
-            "rating":"5", 
-            "release_date":"april2021",
-            "review":"keren gan" 
+            "watched":"Belum", 
+            "title":"Star Wars: Episode IV - A New Hope", 
+            "rating":"8.6", 
+            "release_date":"25 Mei 1977",
+            "review":"-" 
         }
     },
     {
         "model":"mywatchlist.mywatchlistitem",
         "pk":9,
         "fields":{
-            "watched":"Sudah", 
-            "title":"Apenger", 
-            "rating":"5", 
-            "release_date":"april2021",
-            "review":"keren gan" 
+            "watched":"Belum", 
+            "title":"Star Wars: Episode V - The Empire Strikes Back", 
+            "rating":"8.7", 
+            "release_date":"17 Mei 1980",
+            "review":"-" 
         }
     },
     {
         "model":"mywatchlist.mywatchlistitem",
         "pk":10,
         "fields":{
-            "watched":"Sudah", 
-            "title":"Apenger", 
-            "rating":"5", 
-            "release_date":"april2021",
-            "review":"keren gan" 
+            "watched":"Belum", 
+            "title":"Star Wars: Episode VI - Return of the Jedi", 
+            "rating":"8.3", 
+            "release_date":"25 Mei 1983",
+            "review":"-" 
         }
     }
 ]

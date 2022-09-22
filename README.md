@@ -15,10 +15,23 @@ TANDA SAMA DENGAN(=) ARTINYA PEMBATAS
     7. karena menggunakan tugas2 yang sudah dideploy minggu lalu, tugas tiga tinggal men-push ke github dan akan otomatis dideploy
     8. sisanya readme aja
 
-4. ![This is an image](.jpg)
+4. Screenshoot:
+![This is an image](tugas3_sc_html_1.jpg)
+![This is an image](tugas3_sc_html_2.jpg)
+![This is an image](tugas3_sc_html_3.jpg)
+![This is an image](tugas3_sc_html_4.jpg)
+![This is an image](tugas3_sc_html_5.jpg)
+![This is an image](tugas3_sc_json_1.jpg)
+![This is an image](tugas3_sc_json_2.jpg)
+![This is an image](tugas3_sc_json_3.jpg)
+![This is an image](tugas3_sc_json_4.jpg)
+![This is an image](tugas3_sc_json_5.jpg)
+![This is an image](tugas3_sc_xml_1.jpg)
+![This is an image](tugas3_sc_xml_2.jpg)
+![This is an image](tugas3_sc_xml_3.jpg)
+![This is an image](tugas3_sc_xml_4.jpg)
 
-5. ![This is an image](.jpg)
-
-https://tugas2-bimo-h.herokuapp.com/mywatchlist/html/
-https://tugas2-bimo-h.herokuapp.com/mywatchlist/xml/
-https://tugas2-bimo-h.herokuapp.com/mywatchlist/json/
+5.  Link    
+    https://tugas2-bimo-h.herokuapp.com/mywatchlist/html/
+    https://tugas2-bimo-h.herokuapp.com/mywatchlist/xml/
+    https://tugas2-bimo-h.herokuapp.com/mywatchlist/json/
