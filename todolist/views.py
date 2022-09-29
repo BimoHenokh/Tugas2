@@ -12,9 +12,10 @@ from .forms import *
 @login_required(login_url='/todolist/login/')
 def show_todolist(request):
     # data = user.user_todolist.all
+    nama = request.user
     context = {
         # 'list_data': data,
-        'nama': 'Bimo Henokh Barata'
+        'nama': nama
     }
     return render(request, "todolist.html", context)
 
