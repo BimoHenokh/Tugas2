@@ -6,15 +6,15 @@ from django.contrib import messages
 from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.decorators import login_required
 import datetime
-from django.http import HttpResponseRedirect
+from django.http import HttpResponseRedirect, response
 from django.urls import reverse
 from .forms import *
 
 @login_required(login_url='/todolist/login/')
 def show_todolist(request):
-    data = Task.objects.all()
+    # data = user.user_todolist.all
     context = {
-        'list_data': data,
+        # 'list_data': data,
         'nama': 'Bimo Henokh Barata'
     }
     return render(request, "todolist.html", context)

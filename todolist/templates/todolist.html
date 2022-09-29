@@ -10,7 +10,7 @@
     </tr>
 
     {% comment %} Tambahkan data di bawah baris ini {% endcomment %}
-    {% for barang in list_data %}
+    {% for barang in user.user_todolist.all %}
     <tr>
         <th>{{barang.user}}</th>
         <th>{{barang.date}}</th>
