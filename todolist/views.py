@@ -30,12 +30,17 @@ def create_task(request):
             return redirect('todolist:showtodolist')
         
     form = TodolistModelForm()
-    context = {'form':form}
+    nama = request.user
+    context = {
+        'form':form,
+        'nama':nama
+        }
     return render(request, 'form.html', context)
 
 # halaman registrasi user
 def register(request):
     form = UserCreationForm()
+    # form_name = form.
 
     if request.method == "POST":
         form = UserCreationForm(request.POST)
@@ -44,7 +49,7 @@ def register(request):
             messages.success(request, 'Akun telah berhasil dibuat!')
             return redirect('todolist:login')
     
-    context = {'form':form}
+    context = {'form':form,}
     return render(request, 'register.html', context)
 
 # halaman login user

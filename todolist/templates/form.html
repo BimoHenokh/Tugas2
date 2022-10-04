@@ -1,10 +1,58 @@
-<!DOCTYPE html>
-<!-- html halaman pembuatan task -->
+{% extends 'base.html' %}
 
-<body>
+{% block meta %}
+<!-- <style>
+    /* Modify the background color */
+     
+    .navbar-expand-sm {
+        background-color: rgb(162, 113, 205);
+    }
+    /* Modify brand and text color */
+     
+    /* .navbar-custom .navbar-brand,
+    .navbar-custom .navbar-text {
+        color: green;
+    } */
+</style> -->
+<title>Home - Todolist</title>
+{% endblock meta %}
+
+{% block content %}
+
+<form method="post">
+    {%csrf_token %}
+    <nav class="navbar bg-primary navbar-expand-sm ">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><b>Hello {{nama}}</b></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon" color="green"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="{% url 'todolist:showtodolist' %}">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="{% url 'todolist:create_task' %}">Create Task</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'todolist:logout' %}">Logout</a>
+                    </li> 
+                </ul>
+            </div>
+            
+        </div>
+    </nav>
+</form>
+
+<div>
+    <h4>Create Task</h1>
+    <br/><br/>
     <form method="post">
         {%csrf_token %}
-        {{form}}
+        {{form.as_table}}
         <button type="submit">Submit</button>
     </form>
-</body>
+</div>
+{% endblock content %}
