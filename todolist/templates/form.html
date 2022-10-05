@@ -1,58 +1,76 @@
 {% extends 'base.html' %}
 
 {% block meta %}
-<!-- <style>
-    /* Modify the background color */
-     
-    .navbar-expand-sm {
-        background-color: rgb(162, 113, 205);
-    }
-    /* Modify brand and text color */
-     
-    /* .navbar-custom .navbar-brand,
-    .navbar-custom .navbar-text {
-        color: green;
-    } */
-</style> -->
-<title>Home - Todolist</title>
+<title>Create Task - Todolist</title>
 {% endblock meta %}
 
 {% block content %}
-
-<form method="post">
-    {%csrf_token %}
-    <nav class="navbar bg-primary navbar-expand-sm ">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#"><b>Hello {{nama}}</b></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon" color="green"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="{% url 'todolist:showtodolist' %}">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="{% url 'todolist:create_task' %}">Create Task</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{% url 'todolist:logout' %}">Logout</a>
-                    </li> 
-                </ul>
-            </div>
-            
+<nav class="navbar bg-primary navbar-expand-sm ">
+    <div class="container-fluid">
+        <h1 class="navbar-brand"><b>Hello {{nama}}</b></h1>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon" color="green"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" href="{% url 'todolist:showtodolist' %}">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="{% url 'todolist:create_task' %}">Create Task</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'todolist:logout' %}">Logout</a>
+                </li> 
+            </ul>
         </div>
-    </nav>
-</form>
+    </div>
+</nav>
 
-<div>
-    <h4>Create Task</h1>
-    <br/><br/>
-    <form method="post">
-        {%csrf_token %}
-        {{form.as_table}}
-        <button type="submit">Submit</button>
+<div class = "create_task">
+    <form method="POST" action="">
+        {% csrf_token %}
+        <section class="vh-100 gradient-custom">
+            <div class="container py-5 h-20">
+                <div class="row d-flex justify-content-center align-items-center h-100">
+                    <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+                        <div class="card bg-white text-black " style="border-radius: 1rem; ">
+                            <div class="border border-4 border-primary" style="border-radius: 1rem;">
+                                <div class="card-body p-5 text-center">
+                                    <div class="mb-md-5 mt-md-4 pb-2">
+                                        <div class="row mb-1">
+                                            <h2 class="fw-bold mb-2 text-uppercase">Create Task</h2>
+                                        </div>
+
+                                        <div class="form-outline form-outline form-white mb-10">
+                                            <label class="form-label fw-bold" >Title</label>
+                                        </div>
+                                        <div class="row form-white mb-4">
+                                            <input type="text" name="title" id="typeUsernameX" class="form-control form-control-lg" />
+                                        </div>
+
+                                        <div class="row form-white mb-10">
+                                            <label class="form-label fw-bold">Description</label>
+                                        </div>
+                                        <div class="row form-outline form-white mb-4">
+                                            <textarea type="text" name="description" id="typePasswordX" class="form-control form-control-lg" ></textarea>
+                                        </div>
+                                        <div class="row">
+                                            <button class="btn btn-outline-primary btn-lg px-5" type="submit">Submit</button>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </form>
 </div>
 {% endblock content %}
+
+
+
+<!-- Template terinspirasi dari https://mdbootstrap.com/docs/standard/extended/login/#section-7 -->

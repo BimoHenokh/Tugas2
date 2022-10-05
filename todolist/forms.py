@@ -5,13 +5,10 @@ from .models import Task
 
 # komponen halaman form
 class TodolistModelForm(forms.ModelForm):
+    title = forms.TextInput
+    description = forms.Textarea
+
     class Meta:
         model = Task
-        exclude = ('user', 'date')
-        fields = ('title', 'description')
-
-        Widgets = {
-            'title': forms.TextInput(attrs={'class': 'form-control'}),
-            'description': forms.Textarea(attrs={'class': 'form-control'})
-
-        }
+        exclude = ['user', 'date']
+        fields = ['title', 'description']
