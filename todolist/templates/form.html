@@ -3,8 +3,10 @@
 {% block meta %}
 <title>Create Task - Todolist</title>
 {% endblock meta %}
+<!--  -->
 
 {% block content %}
+<!-- Mmebuat navbar -->
 <nav class="navbar bg-primary navbar-expand-sm ">
     <div class="container-fluid">
         <h1 class="navbar-brand"><b>Hello {{nama}}</b></h1>
@@ -12,7 +14,8 @@
             <span class="navbar-toggler-icon" color="green"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0"> <!-- membuat navbar menjadi responsif -->
+
                 <li class="nav-item">
                     <a class="nav-link active" href="{% url 'todolist:showtodolist' %}">Home</a>
                 </li>
@@ -27,14 +30,15 @@
     </div>
 </nav>
 
+<!-- membuat bagian form -->
 <div class = "create_task">
     <form method="POST" action="">
         {% csrf_token %}
         <section class="vh-100 gradient-custom">
             <div class="container py-5 h-20">
                 <div class="row d-flex justify-content-center align-items-center h-100">
-                    <div class="col-12 col-md-8 col-lg-6 col-xl-5">
-                        <div class="card bg-white text-black " style="border-radius: 1rem; ">
+                    <div class="col-12 col-md-8 col-lg-6 col-xl-5"> <!-- menjadi responsif -->
+                        <div class="card bg-white text-black " style="border-radius: 1rem; "> 
                             <div class="border border-4 border-primary" style="border-radius: 1rem;">
                                 <div class="card-body p-5 text-center">
                                     <div class="mb-md-5 mt-md-4 pb-2">

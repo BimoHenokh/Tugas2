@@ -10,10 +10,7 @@
 {% endblock meta %}
 
 {% block content %}
-
-
-
-
+<!-- membuat navbar -->
 <nav class="navbar bg-primary navbar-expand-sm ">
     <div class="container-fluid">
         <h1 class="navbar-brand"><b>Hello {{nama}}</b></h1>
@@ -38,13 +35,14 @@
     </div>
 </nav>
 
-{% comment %} Tambahkan data di bawah baris ini {% endcomment %}
+
+<!-- membuat bagian task -->
 <div class="p-2 pb-4">
     <div class="container-fluid">
         <div class="row g-3">
             {% for barang in user.user_todolist.all %}
-                <div class="col-12 col-sm-6 col-lg-4 col-xxl-3">
-                    <div class="card">
+                <div class="col-12 col-sm-6 col-lg-4 col-xxl-3"><!-- menjadi responsif -->
+                    <div class="card"> <!-- membuat card untuk tiap task -->
                         <div class="card-body border-primary" >
                             <div class="card-header">{{barang.user}}</div>
                             <div class="card-body ">
@@ -56,8 +54,8 @@
                     </div>
                 </div>    
             {% endfor %}
-            <div class="col-12 col-sm-6 col-lg-4 col-xxl-3">
-                <div class="card text-center " style="height: 12rem;">
+            <div class="col-12 col-sm-6 col-lg-4 col-xxl-3"> <!-- card untuk link bagian nambah task -->
+                <div class="card text-center " style="height: 12rem;"> <!-- membuat card untuk linknya -->
                     <a class="card-body border-primary " style="text-decoration:none; font-size: 110px;" href="{% url 'todolist:create_task' %} ">+</a>
                 </div>
             </div>

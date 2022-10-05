@@ -43,5 +43,7 @@
     * = memilih semua elemen
     element = memilih semua elemen <element>
 
-4.  1.  halaman login, dan create-task dibantu oleh template di web https://mdbootstrap.com/docs/standard/extended/login/#section-7
+4.  1.  halaman register, login, dan create task mendapat inspirasi dari https://mdbootstrap.com/docs/standard/extended/login/#section-7. untuk halaman todolist menggunakan card dari boostrap
+    2.  menggunakan boostrap halaman dibuat responsive sesuai size dari halaman contoh script: <div class="col-12 col-sm-6 col-lg-4 col-xxl-3">
+    3.  ketika hover dibuat file css terpisah dan ditambahkan :hover pada pointer
 
