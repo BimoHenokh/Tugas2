@@ -1,5 +1,3 @@
-from tkinter import Widget
-from attr import attr
 from django import forms
 from .models import Task
 
