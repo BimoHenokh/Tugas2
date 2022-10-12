@@ -1,0 +1,79 @@
+{% extends 'base.html' %}
+
+{% block meta %}
+<title>Home - Todolist</title>
+
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'todolist.css' %}">
+    <script src="/static/todolist_ajax.js"></script>
+{% endblock meta %}
+
+{% block content %}
+<!-- membuat navbar -->
+<nav class="navbar bg-primary navbar-expand-sm ">
+    <div class="container-fluid">
+        <h1 class="navbar-brand"><b>Hello {{nama}}</b></h1>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon" color="green"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" href="{% url 'todolist:showtodolist' %}">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="{% url 'todolist:create_task' %}">Create Task</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'todolist:logout' %}">Logout</a>
+                </li> 
+            </ul>
+        </div>
+        
+    </div>
+</nav>
+
+<!-- membuat form menggunakan bootstrap modal-->
+<div class="p-2 pb-4">
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#djangoForm" data-bs-whatever="@getbootstrap">Input Task</button>
+</div>
+<div class="modal fade" id="djangoForm" data-bs-backdrop="static" tabindex="-1" aria-labelledby="djangoFormLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="djangoFormLabel">Input data</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                <div class="mb-3">
+                    <label for="input_title" class="col-form-label">Title:</label>
+                    <input type="text" class="form-control" id="input_title">
+                </div>
+                <div class="mb-3">
+                    <label for="input_description" class="col-form-label">Description:</label>
+                    <textarea class="form-control" id="input_description"></textarea>
+                </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" id="submit_form" >Submit data</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- menampilkan task -->
+<div class="p-2 pb-4">
+    <div class="container-fluid">
+        <div class="row g-3">
+            <div id="show_ajax">
+
+            </div>
+        </div>    
+    </div>
+</div>
+{% endblock content %}
+

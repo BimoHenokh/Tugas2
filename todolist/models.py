@@ -8,4 +8,6 @@ class Task(models.Model):
     date = models.DateField(default=timezone.now)
     title = models.CharField(max_length=255)
     description = models.TextField()
-    
+
+
+
