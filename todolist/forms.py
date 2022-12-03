@@ -3,8 +3,8 @@ from .models import Task
 
 # komponen halaman form
 class TodolistModelForm(forms.ModelForm):
-    title = forms.TextInput
-    description = forms.Textarea
+    title = forms.TextInput()
+    # description = forms.Textarea
 
     class Meta:
         model = Task

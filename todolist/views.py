@@ -1,4 +1,3 @@
-from telnetlib import STATUS
 from django.shortcuts import render
 from django.shortcuts import redirect
 from django.contrib.auth.forms import UserCreationForm
@@ -43,9 +42,6 @@ def create_task(request):
 
 # halaman registrasi user
 def register(request):
-    form = UserCreationForm()
-    # form_name = form.
-
     if request.method == "POST":
         form = UserCreationForm(request.POST)
         if form.is_valid():
@@ -53,6 +49,7 @@ def register(request):
             messages.success(request, 'Akun telah berhasil dibuat!')
             return redirect('todolist:login')
     
+    form = UserCreationForm()
     context = {'form':form,}
     return render(request, 'register.html', context)
 
@@ -95,6 +92,7 @@ def add(request):
     print(request.POST)
     print(request.user)
     if request.method == 'POST':
+        print(request.POST)
         
         user = request.user
         title = request.POST.get('title')
